@@ -1,0 +1,11 @@
+import random
+print("welcome user")
+randomchars = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+nbrofpwds = int(input("Enter the number of password:"))
+pwdslen = int(input("Enter the lenght of the password:"))
+print("Here your password:")
+for x in range(nbrofpwds):
+    pwds = ""
+    for chars in range(pwdslen):
+        pwds = pwds + random.choice(randomchars)
+    print(pwds)
